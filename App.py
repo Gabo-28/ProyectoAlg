@@ -250,7 +250,7 @@ Introduzca un id valido: ''')
         categoria = categoria.lower()
         inventario = input('Inventario: ')
         try:
-            int(inventario)
+            inventario = int(inventario)
         except ValueError:
             inventario = input('Introduzca un numero: ')
             
@@ -937,7 +937,7 @@ Introduzca un id valido: ''')
     4- Moneda de Pago
 ---> ''')
             try:
-                int(o)
+                o = int(o)
             except ValueError:
                 print('Introduzca un numero')
             
